@@ -50,7 +50,7 @@ public class UIMenu {
                     System.out.println("::Reserve una cita");
                     break;
                 case 2:
-                    System.out.println("::Revise su cita");
+                    System.out.println("::Mis citas");
                     break;
                 case 0:
                     response=0;
