@@ -1,38 +1,18 @@
 import java.util.ArrayList;
 import java.util.Date;
-public class Doctor {
-    //atributos
-    static int id = 0; //autoincrementado
-    private String name;
+public class Doctor extends User{
     private String speciality;
 
     //contructor vacio
     Doctor(){
-        //System.out.println("Contruyendo el Obj Doctor");
-        //id++; //se autoincrementa cuando se crea un nuevo obj
-    }
 
-    //constructor con una variable
-    Doctor(String name){
-        System.out.println("Contruyendo el Obj Doctor - " + name);
     }
 
     //constructor con dos variables
-    public Doctor(String name, String speciality) {
-        this.name = name;
+    public Doctor(String name, String email) {
+        super(name, email);
+        System.out.println("El nombre del Doctor asignado es: "+name);
         this.speciality = speciality;
-        System.out.println("Contruyendo el Obj Doctor - " + name);
-        id++;
-    }
-
-    //comportamientos - la forma de usar los atributos
-    public void showName(){
-        System.out.println(name);
-    }
-
-    //metodos de la clase
-    public void showId(){
-        System.out.println("ID Doctor: "+id);
     }
 
     //creando un arreglo
@@ -48,14 +28,6 @@ public class Doctor {
     //retornando el arraylist
     public ArrayList<AvaibleAppointment> getAvaibleAppointments(){
         return avaibleAppointments;
-    }
-
-    @Override
-    public String toString() {
-        return "Doctor{" +
-                "name='" + name + '\'' +
-                ", speciality='" + speciality + '\'' +
-                '}';
     }
 
     /*
