@@ -9,9 +9,9 @@ public class User {
     public User() {
     }
 
-    public User(String name, String phoneNumber) {
+    public User(String name, String email) {
         this.name = name;
-        this.phoneNumber = phoneNumber;
+        this.email = email;
     }
 
     public int getId() {
@@ -56,5 +56,10 @@ public class User {
         }else{
             this.phoneNumber = phoneNumber;
         }
+    }
+
+    @Override
+    public String toString(){
+        return "User: "+name+", Email: "+email+"\nAddress: "+address+". Phone: "+phoneNumber;
     }
 }

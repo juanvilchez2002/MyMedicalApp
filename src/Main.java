@@ -22,7 +22,7 @@ public class Main {
         System.out.println();
 
         Patient patient = new Patient("Alejandro", "ale@gmail.com");
-        System.out.println(patient.toString());
+        System.out.println(patient);
 
         patient.setWeight(60.5);
         System.out.println(patient.getWeight());
@@ -30,8 +30,10 @@ public class Main {
         System.out.println(patient.getHeight());
 
         System.out.println(patient.toString());
-        patient.setPhoneNumber("1516");
+        patient.setPhoneNumber("1515");
         System.out.println(patient.getPhoneNumber());
+
+
     }
 }
 
